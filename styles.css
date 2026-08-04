@@ -287,3 +287,33 @@ input:focus {
     margin-top: 20px;
     line-height: 1.4;
 }
+/* Reflejo brillante robótico para el texto '60 Días' */
+.shimmer-text {
+    font-weight: 800;
+    color: var(--neon-green);
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(
+        90deg, 
+        #00ffa3 0%, 
+        #00ffa3 40%, 
+        #ffffff 50%, 
+        #00ffa3 60%, 
+        #00ffa3 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: roboticShimmer 2.5s linear infinite;
+    text-shadow: 0 0 8px rgba(0, 255, 163, 0.2);
+}
+
+/* Animación del barrido de luz metálica */
+@keyframes roboticShimmer {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
