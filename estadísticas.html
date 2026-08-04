@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Yield - Estadísticas de Red</title>
+    <!-- Enlace al mismo archivo CSS para mantener la consistencia estética -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos futuristas -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+
+    <!-- Fondo con cuadrícula fija -->
+    <div class="grid-background"></div>
+
+    <div class="card">
+        <!-- Línea de escaneo láser -->
+        <div class="scanner-line"></div>
+
+        <!-- Distintivo Superior -->
+        <div class="badge-gold">
+            <span class="pulse-dot-gold"></span>
+            <i data-lucide="activity" class="icon-small"></i>
+            MONITOR DE RED: EN VIVO
+        </div>
+
+        <!-- Títulos -->
+        <h1>Métricas Globales</h1>
+        <p class="subtitle">Actividad de nodos e inversión procesada por el algoritmo central en tiempo real.</p>
+
+        <!-- Bloque de Estadísticas en Tiempo Real -->
+        <div class="stats-container">
+            
+            <!-- Usuario Activos -->
+            <div class="stat-box">
+                <div class="stat-header">
+                    <i data-lucide="users" class="icon-stat blue"></i>
+                    <span class="stat-label">Inversores Activos</span>
+                </div>
+                <div class="stat-number" id="active-users">14,284</div>
+                <div class="stat-footer blue-text">// NODOS EN LÍNEA</div>
+            </div>
+
+            <!-- Capital Total Inyectado -->
+            <div class="stat-box">
+                <div class="stat-header">
+                    <i data-lucide="database" class="icon-stat gold"></i>
+                    <span class="stat-label">Liquidez Bloqueada</span>
+                </div>
+                <div class="stat-number gold-text" id="total-liquidity">$4,850,230</div>
+                <div class="stat-footer gold-muted-text">// CONTRATOS INTEGRADOS</div>
+            </div>
+
+            <!-- Rendimiento Total Pagado -->
+            <div class="stat-box">
+                <div class="stat-header">
+                    <i data-lucide="cpu" class="icon-stat green"></i>
+                    <span class="stat-label">Intereses Distribuidos</span>
+                </div>
+                <div class="stat-number green-text" id="total-payouts">$194,008</div>
+                <div class="stat-footer green-muted-text">// EFICIENCIA: 100%</div>
+            </div>
+
+        </div>
+
+        <!-- Botón de Navegación de Retorno -->
+        <a href="calculo.html" class="btn btn-secondary">
+            <i data-lucide="arrow-left" class="icon-btn"></i>
+            <span>VOLVER AL SIMULADOR</span>
+        </a>
+        
+        <p class="footer-note">Sincronizado con la red central. Frecuencia de refresco: 2.5s.</p>
+    </div>
+
+    <!-- Enlace al nuevo archivo JavaScript de estadísticas -->
+    <script src="stats.js"></script>
+</body>
+</html>
