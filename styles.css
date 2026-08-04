@@ -1,4 +1,4 @@
-:root {
+l:root {
     --bg-dark: #050508;
     --card-bg: rgba(10, 11, 18, 0.75);
     --neon-green: #00ffa3;
@@ -22,14 +22,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
-    overflow: hidden;
+    padding: 40px 20px;
+    overflow-y: auto;
     position: relative;
 }
 
-/* Fondo de cuadrícula futurista */
+/* Fondo de cuadrícula futurista fijo */
 .grid-background {
-    position: absolute;
+    position: fixed; /* Se queda quieto en la pantalla aunque deslices hacia abajo */
     top: 0;
     left: 0;
     width: 100%;
