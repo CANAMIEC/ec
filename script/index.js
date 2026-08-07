@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const amountInput = document.getElementById('amount');
     const profitOutput = document.getElementById('profit');
     const totalOutput = document.getElementById('total');
-    const INTEREST_RATE = 0.04; // 4%
+    const INTEREST_RATE = 0.03; // 4%
 
     function calculateInvestment() {
         let amount = parseFloat(amountInput.value);
