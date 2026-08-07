@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const profitOutput = document.getElementById('profit');
     const totalOutput = document.getElementById('total');
 
-    // Tasa fija solicitada: 4%
-    const INTEREST_RATE = 0.04; 
+    // Tasa fija solicitada: 3%
+    const INTEREST_RATE = 0.03; 
 
     // Función principal que realiza el cálculo automático futurista
     function calculateInvestment() {
