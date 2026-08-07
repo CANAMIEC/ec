@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Yield - Niveles de Inversión</title>
+    <!-- Mismo archivo CSS global -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de alta tecnología -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+
+    <!-- Fondo de cuadrícula fija -->
+    <div class="grid-background"></div>
+
+    <div class="container-wide">
+        
+        <!-- Encabezado de la Sección -->
+        <div class="section-header">
+            <div class="badge-gold">
+                <span class="pulse-dot-gold"></span>
+                <i data-lucide="layers" class="icon-small"></i>
+                NIVELES DE ACCESO CORPORATIVO
+            </div>
+            <h1>Selecciona tu Rango de Inyección</h1>
+            <p class="subtitle-wide">Forma parte de la red algorítmica y asegura tu tasa fija del 4% según tu perfil de capital.</p>
+        </div>
+
+        <!-- Contenedor de Opciones de Inversión -->
+        <div class="tiers-grid">
+            
+            <!-- OPCIÓN 1: Inversor Fan -->
+            <div class="tier-card">
+                <div class="tier-glow blue"></div>
+                <div class="tier-badge">// NIVEL 01</div>
+                <h2>Inversor Fan</h2>
+                <div class="tier-limit">Hasta <span class="blue-text">$50,000</span></div>
+                <p class="tier-desc">Ideal para iniciarse en el ecosistema cuántico. Liquidaciones automatizadas aseguradas cada ciclo.</p>
+                <ul class="tier-features">
+                    <li><i data-lucide="check" class="blue-text"></i> Interés del 4% cada 60 días</li>
+                    <li><i data-lucide="check" class="blue-text"></i> Panel de control básico</li>
+                    <li><i data-lucide="check" class="blue-text"></i> Retiros automáticos</li>
+                </ul>
+                <a href="calculo.html" class="btn btn-tier-blue">SIMULAR CAPITAL</a>
+            </div>
+
+            <!-- OPCIÓN 2: Inversor Pro -->
+            <div class="tier-card featured">
+                <div class="tier-glow gold"></div>
+                <div class="tier-badge gold-text">// NIVEL 02 [RECOMENDADO]</div>
+                <h2 class="gold-text">Inversor Pro</h2>
+                <div class="tier-limit">Hasta <span class="gold-text">$500,000</span></div>
+                <p class="tier-desc">Acceso prioritario a bloques de liquidez de alta velocidad y herramientas de optimización avanzada.</p>
+                <ul class="tier-features">
+                    <li><i data-lucide="check" class="gold-text"></i> Interés del 4% cada 60 días</li>
+                    <li><i data-lucide="check" class="gold-text"></i> Soporte cuántico 24/7 dedicado</li>
+                    <li><i data-lucide="check" class="gold-text"></i> Reportes de auditoría en vivo</li>
+                </ul>
+                <a href="calculo.html" class="btn btn-tier-gold">INICIAR PROTOCOLO</a>
+            </div>
+
+            <!-- OPCIÓN 3: Socio CAN_AP -->
+            <div class="tier-card">
+                <div class="tier-glow green"></div>
+                <div class="tier-badge green-text">// ALIANZA ESTRATÉGICA</div>
+                <h2 class="green-text">Socio CAN_AP</h2>
+                <div class="tier-limit"><span class="green-text">Aporte de Propiedad</span></div>
+                <p class="tier-desc">Expansión física de la infraestructura. Aporte enfocado en propiedad para la apertura de oficinas o edificios corporativos.</p>
+                <ul class="tier-features">
+                    <li><i data-lucide="check" class="green-text"></i> Contrato de Co-propiedad Legal</li>
+                    <li><i data-lucide="check" class="green-text"></i> Acceso a dividendos de red</li>
+                    <li><i data-lucide="check" class="green-text"></i> Infraestructura física integrada</li>
+                </ul>
+                <button class="btn btn-tier-green" onclick="alert('Iniciando canal cifrado con un asesor de CAN_AP...')">CONTACTAR SOCIO</button>
+            </div>
+
+        </div>
+
+        <!-- Botones de Navegación Inferior -->
+        <div class="navigation-footer">
+            <a href="calculo.html" class="btn-network">
+                <i data-lucide="calculator" class="icon-btn"></i>
+                <span>IR AL SIMULADOR</span>
+            </a>
+            <a href="estadisticas.html" class="btn-network">
+                <i data-lucide="activity" class="icon-btn"></i>
+                <span>MONITOR DE RED</span>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        // Inicializar los iconos en esta página
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
